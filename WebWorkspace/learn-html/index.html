@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 12px;
+    }
+
+    .col1 {
+        background-color: yellow;
+    }
+</style>
+
+<body>
+    <h1>Table 기본표</h1>
+    <table>
+        <caption>프로필 테이블</caption>
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col3">
+        </colgroup>
+        <tr>
+            <thead>
+                <th>이름</th>
+                <th>취미</th>
+                <th>특기</th>
+            </thead>
+        </tr>
+        <tbody>
+            <tr>
+                <td rowspan="3">오운이</td>
+                <td>게임</td>
+                <td>기타</td>
+            </tr>
+            <tr>
+                <td>운동</td>
+                <td>코딩</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">피파</td>
+                <td>롤</td>
+                <td>옵치</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
