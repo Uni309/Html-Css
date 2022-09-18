@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Style2</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        .content {
+            border: 1px solid blue;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .article {
+            line-height: 1.8rem;
+            letter-spacing: 1px;
+            word-spacing: 10px;
+            text-indent: 80px;
+        }
+
+        .transform-case {
+            text-transform: uppercase;
+        }
+
+        .article>a {
+            text-decoration: none;
+        }
+
+        .text-shadow {
+            text-shadow: 10px 10px 1px rgb(138, 137, 137);
+        }
+
+        ul {
+            list-style: circle;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p class="content text-center">오운이</p>
+        <p class="content text-right">오운이</p>
+        <p class="content text-left">오운이</p>
+    </section>
+    <section>
+        <p class="article">
+            <span class="transform-case">Japan </span> <a href="">미국</a> 스위스그리스덴마크스웨덴
+        </p>
+    </section>
+    <section>
+        <h2 class="text-shadow">오운이</h2>
+    </section>
+    <section>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </section>
+</body>
+
+</html>
