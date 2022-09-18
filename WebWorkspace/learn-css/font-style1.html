@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Style 1</title>
+</head>
+<style>
+    * {
+        /* margin: 0px;
+        padding: 0px; */
+    }
+
+    html {
+        /* font-family: serif, monospace;  */
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+
+    .font-italic {
+        font-style: italic;
+    }
+
+    .font-weight-bold {
+        font-weight: bold;
+    }
+
+    .font-weight-300 {
+        font-weight: 300;
+    }
+
+    /* 소문자를 작은 대문자로 */
+    .font-variant {
+        font-variant: small-caps;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .subtitle-rem {
+        font-size: 2rem;
+    }
+
+    .subtitle-em {
+        font-size: 2em;
+    }
+
+    .article {
+        font-size: 2em;
+    }
+
+    .rentangle.width {
+        width: 100vw;
+        height: 50px;
+        background-color: yellow;
+    }
+
+    .rentangle.height {
+        width: 100vw;
+        height: 50px;
+        background-color: blueviolet;
+    }
+</style>
+
+<body>
+    <h2 class="title">오운이</h2>
+    <p class="content">18살 오운이입니다.</p>
+    <p class="content font-italic">18살 오운이입니다.</p>
+    <p class="content font-weight-bold">18살 오운이입니다.</p>
+    <p class="content font-weight-300">18살 오운이입니다.</p>
+    <p class="content">18살 오운이입니다.</p>
+    <p class="content font-variant">Hello UNI</p>
+
+    <hr>
+
+    <h2>px</h2>
+    <p class="subtitle">18살 오운이입니다.</p>
+    <h2>rem</h2>
+    <p class="subtitle-rem">18살 오운이입니다.</p>
+    <h2>em</h2>
+    <div class="article">
+        <p class="subtitle-em">18살 오운이입니다.</p>
+    </div>
+    <hr>
+    <!-- 100vw = 1200px
+    50vw = 600px
+    100vh = 1600px
+    50vh = 800px -->
+    <!-- Viewport width -->
+    <h2>vw</h2>
+    <div class="rentangle width"></div>
+    <!-- Viewport height -->
+    <h2>vh</h2>
+    <div class="rentangle height"></div>
+
+</body>
+
+</html>
