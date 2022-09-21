@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    div.content {
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid green;
+        margin: 40px;
+    }
+
+    span {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+
+    div.padding {
+        border: 1px solid black;
+        /* 앞 20px : 위아래, 뒤 10px : 좌우*/
+
+        padding: 20px 10px;
+    }
+
+    /* margin > border > padding */
+    div.margin {
+        border: 1px solid red;
+        margin-left: 20px;
+    }
+
+    /* margin 가로, 중첩 */
+    .shape {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <div class="content"></div>
+    <span>Hello CSS</span>
+    <div class="padding">
+        LE SSERAFIM의 올라운더 멤버 중 한 명으로 주로 꼽힌다. 주 포지션은
+        랩과 댄스이지만,
+        보컬 실력도 좋은 편이라 외국인임에도 파트를 상당히 많이 받는 편.
+    </div>
+    <div class="margin">
+        LE SSERAFIM의 올라운더 멤버 중 한 명으로 주로 꼽힌다. 주 포지션은
+        랩과 댄스이지만,
+        보컬 실력도 좋은 편이라 외국인임에도 파트를 상당히 많이 받는 편.
+    </div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+</body>
+
+</html>
