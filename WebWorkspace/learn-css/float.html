@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+</head>
+<style>
+    /* float속성에 의해 정의된 요소를 p태그 감싸는 것을 볼 수 있다.
+       그리고 이러한 영향을 끝내기 위해 clear를 사용한다. */
+    .container {
+        width: 800px;
+        border: 1px solid grey;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    .float-left {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    p {
+        border: 1px solid blueviolet;
+    }
+
+    /* 현재 left의 영향을 받았기 때문에 right는 의미없다.
+       하지만 깊게 생각하지 말고 both로 하자. */
+    .clear {
+        clear: both;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img class="float-left" src="./chaewon.jpg" alt="">
+        <p>쏘스뮤직 소속의 5인조 걸그룹 LE SSERAFIM의 리더이다.
+            2018년 걸그룹 IZ*ONE의 멤버로 데뷔하여 2021년 4월까지 활동했고 이후 2022년 LE SSERAFIM으로 재데뷔했다.</p>
+        <img class="float-right" src="./cute.jpg" alt="">
+        <p class="clear">멤버들과 친구처럼 지내는, 자신을 편하게 생각할 수 있는, 멤버들이 의지할 수 있는 리더가 되고 싶다고 한다.</p>
+    </div>
+</body>
+
+</html>

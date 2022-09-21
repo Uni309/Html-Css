@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .border {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-top: 10px dotted red;
+        border-bottom: 5px dashed blue;
+        border-left: 1px solid blueviolet;
+        border-right: 3px solid yellow;
+    }
+
+    .border-radius {
+        margin: 20px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        /* 동 to the 그 to the 라미 */
+        border-radius: 50%;
+    }
+
+    .content-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid blue;
+        padding: 20px;
+        margin: 10px;
+        /* 싹 다 더함 */
+        box-sizing: content-box;
+    }
+
+    .content-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid red;
+        padding: 20px;
+        margin: 10px;
+        /* 박스배치 계산 용이 */
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <div class="border"></div>
+    <div class="border-radius"></div>
+    <div class="content-box"></div>
+    <div class="border-box"></div>
+</body>
+
+</html>
