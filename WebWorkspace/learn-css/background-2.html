@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<div lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background</title>
+    </head>
+    <style>
+        .red {
+            background-color: red;
+            width: 120px;
+            height: 120px;
+        }
+
+        .image {
+            background-image: url("cute\ \(1\).jpg");
+            background-repeat: repeat;
+            background-position: top right;
+            width: 200px;
+            height: 350px;
+            border: 1px solid black;
+            display: inline-block;
+            overflow-x: scroll;
+        }
+
+        /* 배경 이미지를 뷰포트 내에서 고정할지 말지를 지정하는 속성입니다.
+        scroll = 선택한 요소와 같이 움직임 */
+        .attachment-scroll {
+            background-attachment: scroll;
+        }
+
+        /*  fixed = 움직이지 않는다  */
+        .attachment-fixed {
+            background-attachment: fixed;
+        }
+
+        /*  local = 배경과 글 같이 움직임 */
+        .attachment-local {
+            background-attachment: local;
+        }
+
+        .background-size {
+            width: 600px;
+            height: 300px;
+            background-image: url('../다운로드.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            border: 1px solid black;
+        }
+
+        .linear-gradient {
+            width: 500px;
+            height: 200px;
+            border: 1px solid red;
+            background: linear-gradient(to right, red 50%, blue 80%, yellow 100%);
+        }
+
+        .radial-gradient {
+            width: 500px;
+            height: 200px;
+            border: 1px solid blue;
+            /* 10% : x축, 50% : y축 */
+            background: radial-gradient(circle at 10% 50%, white, yellow, red, blue);
+        }
+    </style>
+
+    <div>
+        <h3>background-color</h3>
+        <div class="red"></div>
+
+        <h3>background-image</h3>
+        <div class="image attachment-scroll">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, nobis. Vero eaque odit, placeat distinctio
+            repudiandae rerum soluta doloribus expedita mollitia ex quas ipsum ipsam fugiat, blanditiis, earum tempore
+            est.
+            Officiis quidem praesentium consequatur, tenetur accusantium ex dolorem illo aperiam delectus laborum
+            placeat
+            voluptate odio exercitationem. In rem tempora sed nobis suscipit veritatis quisquam ipsum inventore,
+            aspernatur
+            dolores deserunt reiciendis.
+            Corporis totam velit esse laborum enim nesciunt, veniam ea dolor dolores adipisci ab omnis provident officia
+            dolorum, corrupti fugiat itaque voluptatem. Quia tenetur a quasi ratione totam vero nesciunt. Eaque?
+            Perferendis ullam sed, iusto dignissimos id hic odit cupiditate! Praesentium vero consequatur accusantium
+            perspiciatis quasi iure incidunt eos similique. Aperiam magnam necessitatibus deserunt, consectetur tempore
+            nisi
+            maiores dolorem asperiores molestiae.
+            Facere similique aspernatur veritatis consectetur deleniti obcaecati enim amet eius debitis laborum corrupti
+            ea
+            velit eos, autem, molestias sed impedit ratione error quia perspiciatis? Ab autem vel necessitatibus tempora
+            dicta.
+            Ut earum error nisi aperiam facere numquam. Saepe obcaecati temporibus totam exercitationem esse natus
+            recusandae
+            veritatis, labore repellendus porro vel eligendi reiciendis! In quaerat ipsa ducimus blanditiis quisquam
+            nesciunt
+            architecto.
+            Repellat in omnis soluta expedita, eveniet ut nam culpa labore odio hic ex non voluptatem ipsum nisi at
+            optio
+            blanditiis illum fugiat. Consectetur tempore reprehenderit eos modi voluptates aspernatur recusandae!
+            Id commodi repellendus esse debitis minima odit maxime impedit doloremque at ratione? Voluptatum, reiciendis
+            nulla
+            quasi quo necessitatibus illum alias et accusamus, nesciunt ducimus nemo sunt, quam autem dignissimos
+            quibusdam?
+        </div>
+        <div class="image attachment-fixed">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, nobis. Vero eaque odit, placeat distinctio
+            repudiandae rerum soluta doloribus expedita mollitia ex quas ipsum ipsam fugiat, blanditiis, earum tempore
+            est.
+            Officiis quidem praesentium consequatur, tenetur accusantium ex dolorem illo aperiam delectus laborum
+            placeat
+            voluptate odio exercitationem. In rem tempora sed nobis suscipit veritatis quisquam ipsum inventore,
+            aspernatur
+            dolores deserunt reiciendis.
+            Corporis totam velit esse laborum enim nesciunt, veniam ea dolor dolores adipisci ab omnis provident officia
+            dolorum, corrupti fugiat itaque voluptatem. Quia tenetur a quasi ratione totam vero nesciunt. Eaque?
+            Perferendis ullam sed, iusto dignissimos id hic odit cupiditate! Praesentium vero consequatur accusantium
+            perspiciatis quasi iure incidunt eos similique. Aperiam magnam necessitatibus deserunt, consectetur tempore
+            nisi
+            maiores dolorem asperiores molestiae.
+            Facere similique aspernatur veritatis consectetur deleniti obcaecati enim amet eius debitis laborum corrupti
+            ea
+            velit eos, autem, molestias sed impedit ratione error quia perspiciatis? Ab autem vel necessitatibus tempora
+            dicta.
+            Ut earum error nisi aperiam facere numquam. Saepe obcaecati temporibus totam exercitationem esse natus
+            recusandae
+            veritatis, labore repellendus porro vel eligendi reiciendis! In quaerat ipsa ducimus blanditiis quisquam
+            nesciunt
+            architecto.
+            Repellat in omnis soluta expedita, eveniet ut nam culpa labore odio hic ex non voluptatem ipsum nisi at
+            optio
+            blanditiis illum fugiat. Consectetur tempore reprehenderit eos modi voluptates aspernatur recusandae!
+            Id commodi repellendus esse debitis minima odit maxime impedit doloremque at ratione? Voluptatum, reiciendis
+            nulla
+            quasi quo necessitatibus illum alias et accusamus, nesciunt ducimus nemo sunt, quam autem dignissimos
+            quibusdam?
+        </div>
+        <div class="image attachment-local">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, nobis. Vero eaque odit, placeat distinctio
+            repudiandae rerum soluta doloribus expedita mollitia ex quas ipsum ipsam fugiat, blanditiis, earum tempore
+            est.
+            Officiis quidem praesentium consequatur, tenetur accusantium ex dolorem illo aperiam delectus laborum
+            placeat
+            voluptate odio exercitationem. In rem tempora sed nobis suscipit veritatis quisquam ipsum inventore,
+            aspernatur
+            dolores deserunt reiciendis.
+            Corporis totam velit esse laborum enim nesciunt, veniam ea dolor dolores adipisci ab omnis provident officia
+            dolorum, corrupti fugiat itaque voluptatem. Quia tenetur a quasi ratione totam vero nesciunt. Eaque?
+            Perferendis ullam sed, iusto dignissimos id hic odit cupiditate! Praesentium vero consequatur accusantium
+            perspiciatis quasi iure incidunt eos similique. Aperiam magnam necessitatibus deserunt, consectetur tempore
+            nisi
+            maiores dolorem asperiores molestiae.
+            Facere similique aspernatur veritatis consectetur deleniti obcaecati enim amet eius debitis laborum corrupti
+            ea
+            velit eos, autem, molestias sed impedit ratione error quia perspiciatis? Ab autem vel necessitatibus tempora
+            dicta.
+            Ut earum error nisi aperiam facere numquam. Saepe obcaecati temporibus totam exercitationem esse natus
+            recusandae
+            veritatis, labore repellendus porro vel eligendi reiciendis! In quaerat ipsa ducimus blanditiis quisquam
+            nesciunt
+            architecto.
+            Repellat in omnis soluta expedita, eveniet ut nam culpa labore odio hic ex non voluptatem ipsum nisi at
+            optio
+            blanditiis illum fugiat. Consectetur tempore reprehenderit eos modi voluptates aspernatur recusandae!
+            Id commodi repellendus esse debitis minima odit maxime impedit doloremque at ratione? Voluptatum, reiciendis
+            nulla
+            quasi quo necessitatibus illum alias et accusamus, nesciunt ducimus nemo sunt, quam autem dignissimos
+            quibusdam?
+        </div>
+        <h3>background-size</h3>
+        <div class="background-size"></div>
+        <h3>linear-gradient</h3>
+        <div class="linear-gradient"></div>
+        <h3>radial-gradient</h3>
+        <div class="radial-gradient"></div>
+        <div style="height: 1000px; width: 10px; background-color: red;"></div>
+
+        </body>
+
+        </html>
