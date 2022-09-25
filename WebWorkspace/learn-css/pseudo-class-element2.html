@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class&Element</title>
+</head>
+<style>
+    a {
+        font-size: 30px;
+    }
+
+    a:link {
+        color: cyan;
+    }
+
+    a:visited {
+        color: red;
+    }
+
+    a:hover {
+        color: blue;
+        font-weight: 900;
+    }
+
+    fieldset:hover {
+        background-color: lightgrey;
+        box-shadow: 0 0 20px grey;
+    }
+
+    a:active {
+        color: yellow;
+    }
+
+    .field {
+        margin-bottom: 10px;
+    }
+
+    input:focus {
+        outline: none;
+        border: 3px solid red;
+        box-shadow: 0 0 20px blueviolet;
+    }
+
+    li:nth-child(odd) {
+        background-color: yellow;
+    }
+
+    li:not(.target) {
+        font-size: 30px;
+    }
+
+    /* 가상 요소 */
+    .required:before {
+        content: '*';
+        margin-right: 2px;
+        color: red;
+        font-size: 18px;
+    }
+
+    [data-tooltip] {
+        position: relative;
+    }
+
+    [data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 0px;
+        left: 56px;
+        background-color: black;
+        color: white;
+        width: 200px;
+
+    }
+
+    /* 첫글자 스타일링 */
+    .letter::first-letter {
+        font-size: 60px;
+        color: blue;
+    }
+
+    /* 첫번째 라인 */
+    .line::first-line {
+        background-color: yellow;
+        color: blue;
+        font-size: 20px;
+    }
+
+    /* 선택글자 색변경 */
+    p::selection {
+        background-color: red;
+        color: white;
+    }
+</style>
+
+<body>
+    <fieldset>
+        <legend>Pseudo Class</legend>
+        <div>
+            <a href="https://naver.com">네이버</a>
+            <a href="htttps://kakao.com">카카오</a>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>focus, before, after</legend>
+        <div class="field">
+            <label class="required" for="name">이름</label>
+            <input type="text" id="name">
+        </div>
+        <div class="field">
+            <label class="required" for="age">나이</label>
+            <input type="text" id="age">
+        </div>
+        <button data-tooltip="이 버튼을 클릭하여 정보를 보내세요">보내기</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>nth-child, not</legend>
+        <ul>
+            <li class="target">1content</li>
+            <li>2content</li>
+            <li>3content</li>
+            <li>4content</li>
+            <li>5content</li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>first-letter, first-line, section</legend>
+        <div>
+            <p class="letter">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum, temporibus sit corrupti
+                possimus deserunt error. Suscipit dignissimos inventore soluta eum quaerat atque unde impedit, illum,
+                hic at pariatur expedita?
+                Expedita, repellendus nesciunt! Fuga, eligendi expedita dolores minus eveniet ducimus nulla saepe animi
+                explicabo accusantium fugiat. Adipisci magni odio voluptatibus cupiditate soluta quaerat, fugit
+                suscipit! Nam a excepturi natus similique.
+            </p>
+            <p class="line">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nulla odit non, quaerat excepturi
+                asperiores. Totam perferendis harum, veritatis sint assumenda vero dicta aut distinctio iusto magnam,
+                praesentium nisi incidunt!
+                Quos assumenda, corrupti nam sunt numquam quaerat expedita obcaecati error doloremque beatae illum
+                suscipit, aspernatur, nesciunt voluptatum sint debitis tempora veritatis cupiditate tempore aperiam nisi
+                molestias consequuntur. Modi, animi odio.
+            </p>
+        </div>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform&Transition</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: lightgrey;
+    }
+
+    .outline,
+    .box {
+        width: 60px;
+        height: 60px;
+    }
+
+    .outline {
+        border: 3px solid yellow;
+        margin: auto auto;
+        margin-top: 20px;
+    }
+
+    .box {
+        background-color: blue;
+    }
+
+    /* 도형 움직이기 */
+    .box1 {
+        transform: translate(20px, 3px);
+    }
+
+    /* 크기 */
+    .box2 {
+        transform: scaleY(2, 0.5);
+    }
+
+    /* 각도 */
+    .box3 {
+        transform: rotateX(45deg);
+    }
+
+    /* 숫자가 작을수록 커짐 */
+    .outline-box3 {
+        perspective: 50px;
+    }
+
+    /* 왜곡 */
+    .box4 {
+        transform: skew(15deg, 20deg);
+    }
+</style>
+
+<body>
+    <div class="outline">
+        <div class="box box1"></div>
+    </div>
+    <div class="outline">
+        <div class="box box2"></div>
+    </div>
+    <div class="outline outline-box3">
+        <div class="box box3"></div>
+    </div>
+    <div class="outline">
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
